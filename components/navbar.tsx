@@ -11,7 +11,6 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center bg-gray-900 sticky top-0 py-2 px-4 z-[1000]">
-      {/* Logo / Title */}
       <Link
         href="/"
         className="flex items-center text-xl font-bold text-white no-underline m-4"
@@ -19,7 +18,6 @@ const Navbar = () => {
         Faraz Website
       </Link>
 
-      {/* Hamburger menu for mobile */}
       <div
         className="menu md:hidden flex flex-col justify-between w-9 h-8 cursor-pointer"
         onClick={toggleMenu}
@@ -29,7 +27,6 @@ const Navbar = () => {
         <span className="block h-1 w-full bg-white rounded-sm transition-colors duration-300"></span>
       </div>
 
-      {/* Menu Items */}
       <ul
         className={`flex gap-4 transition-transform duration-300 md:flex-row items-center md:static md:flex ${
           menuOpen
